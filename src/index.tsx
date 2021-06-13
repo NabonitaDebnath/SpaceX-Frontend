@@ -35,7 +35,7 @@ export const typeDefs = gql`
 // Initialize ApolloClient
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
   cache,
-  uri: 'http://localhost:4000/graphql',
+  uri: 'https://obscure-meadow-27879.herokuapp.com/',
 
   headers: {
     authorization: localStorage.getItem('token') || '',
